@@ -1,6 +1,6 @@
 # Economic Value of Design-Time Edge Feasibility Exposure
 
-Version `v0.1.0` of the reproducibility artifact for *The Economic Value of
+Version `v0.1.1` of the reproducibility artifact for *The Economic Value of
 Design-Time Feasibility Exposure for Multi-Operator Edge Deployment*.
 
 The artifact contains the synthetic path and policy generator, catalog and
@@ -68,4 +68,3 @@ comparison provides the stronger strict-requirement check. The largest
 
 The study evaluates a truthful resolved support map. The EDFS-style response
 replay is a synthetic integration check for one operator and profile.
-

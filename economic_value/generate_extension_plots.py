@@ -64,7 +64,7 @@ def main() -> None:
         axes[2].plot(order, data.informed_multi_operator_volume, marker=marker,
                      color=COLORS["informed"], label=f"Informed, {pattern}")
     axes[0].set(ylabel="Realized profit", xlabel="Cross-operator support")
-    axes[1].set(ylabel="Catalog service overestimate", xlabel="Cross-operator support")
+    axes[1].set(ylabel="Catalog service error", xlabel="Cross-operator support")
     axes[2].set(ylabel="Multi-MNO service", xlabel="Cross-operator support")
     for axis in axes:
         axis.tick_params(axis="x", rotation=20)
