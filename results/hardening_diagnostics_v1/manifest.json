@@ -1,0 +1,15 @@
+{
+  "source": "/home/dimit/uop/presentations/phd/30_three_body_optimizer/paper_A_model_simulator/noms2027/results/hardening_v1/outcomes.csv",
+  "rows": 3240,
+  "augmented_experiment3_rows": 1440,
+  "augmented_experiment4_rows": 1080,
+  "derived_fields": [
+    "no_deployment",
+    "individually_affordable_sites",
+    "selected_compute_capacity",
+    "selected_interface_capacity",
+    "compute_utilization",
+    "interface_utilization"
+  ],
+  "note": "No planner was rerun; fields are exact deterministic post-processing."
+}

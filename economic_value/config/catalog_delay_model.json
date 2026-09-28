@@ -1,0 +1,13 @@
+{
+  "intercept": 42.38305782900026,
+  "distance": 0.14716099091745713,
+  "tier_local": 0.0,
+  "tier_regional": -5.39190178740418,
+  "tier_central": 2.481679695798956,
+  "development_seed_start": 10000,
+  "development_seeds": 30,
+  "observations": 94440,
+  "rmse_ms": 10.841808754631337,
+  "method": "ordinary least squares over finite synthetic path delays",
+  "uses_evaluation_environments": false
+}

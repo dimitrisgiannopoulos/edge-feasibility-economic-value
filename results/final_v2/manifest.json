@@ -1,0 +1,35 @@
+{
+  "protocol": "final_v2",
+  "config_sha256": "7e84599ae811b841018be4a351fb42336aa59fd68101e3a4c93b505c653f2d0e",
+  "implementation_sha256": "489ff50c4a739d93d82f7ad2985e2e1875da8fea0d11ddbd5abce509f25d7276",
+  "config": {
+    "protocol": "final_v2",
+    "purpose": "Independently seeded principal evaluation with disjoint seed ranges across topology families.",
+    "seed_start": 90000,
+    "replicas": 100,
+    "topologies": [
+      "regular",
+      "multi_hotspot",
+      "asymmetric"
+    ],
+    "demand_patterns": {
+      "regular": "uniform",
+      "multi_hotspot": "hotspots",
+      "asymmetric": "hotspots"
+    },
+    "profile": "moderate",
+    "compute_ratio": 3.0,
+    "throughput_ratio": 3.0,
+    "budget_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "environments": 300,
+  "paired_cases": 1500,
+  "outcomes": 3000,
+  "note": "Independent final seeds; baseline calibration and generator frozen."
+}

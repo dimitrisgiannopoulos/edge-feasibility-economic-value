@@ -1,0 +1,30 @@
+{
+  "protocol": "hardening_v2",
+  "purpose": "Reproduce economic, resource, and correction boundaries with utilization, affordability, and no-deployment diagnostics.",
+  "seed_start": 40000,
+  "replicas": 20,
+  "topologies": ["regular", "multi_hotspot", "asymmetric"],
+  "demand_patterns": {
+    "regular": "uniform",
+    "multi_hotspot": "hotspots",
+    "asymmetric": "hotspots"
+  },
+  "profile": "moderate",
+  "budget_index": 2,
+  "economic_sensitivity": {
+    "fixed_cost_multipliers": [0.5, 1.0, 2.0, 4.0],
+    "variable_cost_multipliers": [0.5, 1.0, 2.0],
+    "compute_ratio": 3.0,
+    "throughput_ratio": 3.0
+  },
+  "resource_sensitivity": {
+    "compute_ratios": [0.75, 1.5, 3.0],
+    "throughput_ratios": [0.75, 1.5, 3.0]
+  },
+  "correction": {
+    "compute_ratio": 3.0,
+    "throughput_ratio": 3.0,
+    "detection_fractions": [0.0, 0.01, 0.1, 0.25],
+    "refund_fractions": [0.0, 0.5, 1.0]
+  }
+}

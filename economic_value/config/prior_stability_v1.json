@@ -1,0 +1,17 @@
+{
+  "protocol": "prior_stability_v1",
+  "purpose": "Check whether the strong prior-informed comparator stabilizes as sampled operator maps increase.",
+  "seed_start": 45000,
+  "replicas": 10,
+  "topologies": ["regular", "multi_hotspot", "asymmetric"],
+  "demand_patterns": {
+    "regular": "uniform",
+    "multi_hotspot": "hotspots",
+    "asymmetric": "hotspots"
+  },
+  "profile": "moderate",
+  "compute_ratio": 3.0,
+  "throughput_ratio": 3.0,
+  "budget_index": 2,
+  "sample_counts": [3, 6, 12]
+}

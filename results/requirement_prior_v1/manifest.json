@@ -1,0 +1,41 @@
+{
+  "protocol": "requirement_prior_v1",
+  "config_sha256": "808b5efa7e6ea87cd0cf4440fc66e95dc7ae1180cad17932ca81e745304e15d5",
+  "implementation_sha256": "8f7cd5626132b6e31852228652d3d813c2930b0148e1cc72503dccdc00a69146",
+  "created_utc": "2026-09-28T15:30:42.615313+00:00",
+  "tasks": 45,
+  "outcome_rows": 135,
+  "config": {
+    "protocol": "requirement_prior_v1",
+    "purpose": "Compare current feasibility with a nested sampled-prior benchmark at 20, 50, and 100 ms on a matched representative subset of the requirement sweep.",
+    "seed_start": 70000,
+    "replicas": 5,
+    "topologies": [
+      "regular",
+      "multi_hotspot",
+      "asymmetric"
+    ],
+    "demand_patterns": {
+      "regular": "uniform",
+      "multi_hotspot": "hotspots",
+      "asymmetric": "hotspots"
+    },
+    "profiles": [
+      "strict",
+      "moderate",
+      "relaxed"
+    ],
+    "compute_ratio": 3.0,
+    "throughput_ratio": 3.0,
+    "budget_index": 2,
+    "sample_counts": [
+      12,
+      24,
+      48
+    ],
+    "solver_time_limit_seconds": 600
+  },
+  "python": "3.8.10",
+  "numpy": "1.24.4",
+  "scipy": "1.10.1"
+}

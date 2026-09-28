@@ -1,0 +1,18 @@
+{
+  "protocol": "prior_stability_v3",
+  "purpose": "Test 12, 24, and 48 nested support-map samples with a materially stronger exact-solver limit.",
+  "seed_start": 46000,
+  "replicas": 10,
+  "topologies": ["regular", "multi_hotspot", "asymmetric"],
+  "demand_patterns": {
+    "regular": "uniform",
+    "multi_hotspot": "hotspots",
+    "asymmetric": "hotspots"
+  },
+  "profile": "moderate",
+  "compute_ratio": 3.0,
+  "throughput_ratio": 3.0,
+  "budget_index": 2,
+  "sample_counts": [12, 24, 48],
+  "solver_time_limit_seconds": 600
+}

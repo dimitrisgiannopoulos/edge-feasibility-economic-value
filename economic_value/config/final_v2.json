@@ -1,0 +1,16 @@
+{
+  "protocol": "final_v2",
+  "purpose": "Independently seeded principal evaluation with disjoint seed ranges across topology families.",
+  "seed_start": 90000,
+  "replicas": 100,
+  "topologies": ["regular", "multi_hotspot", "asymmetric"],
+  "demand_patterns": {
+    "regular": "uniform",
+    "multi_hotspot": "hotspots",
+    "asymmetric": "hotspots"
+  },
+  "profile": "moderate",
+  "compute_ratio": 3.0,
+  "throughput_ratio": 3.0,
+  "budget_indices": [0, 1, 2, 3, 4]
+}

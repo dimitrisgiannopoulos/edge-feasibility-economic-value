@@ -1,0 +1,4 @@
+profile,environments,predicted_supported_tuple_rate,predicted_groups_with_any_support_rate,actual_supported_tuple_rate,actual_groups_with_any_support_rate,catalog_no_deployment_rate,catalog_mean_sites,catalog_predicted_profit,catalog_realized_profit,catalog_coverage
+moderate,300,0.48833043981481483,1.0,0.2552228009259259,0.9950462962962964,0.0,6.706666666666667,4508.857168146709,2823.752030719303,0.5732796308780991
+relaxed,300,1.0,1.0,0.908329475308642,1.0,0.0,5.3,5465.895549289614,5116.282701315893,0.819399803424779
+strict,300,0.0,0.0,0.0780372299382716,0.9793055555555557,1.0,0.0,0.0,0.0,0.0

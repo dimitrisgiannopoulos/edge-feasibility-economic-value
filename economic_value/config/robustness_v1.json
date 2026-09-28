@@ -1,0 +1,28 @@
+{
+  "protocol": "robustness_v1",
+  "purpose": "Independent application-requirement and scaling validation using the frozen greedy information comparison.",
+  "topologies": ["regular", "multi_hotspot", "asymmetric"],
+  "demand_patterns": {
+    "regular": "uniform",
+    "multi_hotspot": "hotspots",
+    "asymmetric": "hotspots"
+  },
+  "budget_index": 2,
+  "compute_ratio": 3.0,
+  "throughput_ratio": 3.0,
+  "application_requirements": {
+    "seed_start": 70000,
+    "replicas": 100,
+    "profiles": ["strict", "moderate", "relaxed"]
+  },
+  "scaling": {
+    "seed_start": 80000,
+    "replicas": 20,
+    "profile": "moderate",
+    "sizes": [
+      {"areas": 24, "sites": 48},
+      {"areas": 100, "sites": 200},
+      {"areas": 250, "sites": 500}
+    ]
+  }
+}

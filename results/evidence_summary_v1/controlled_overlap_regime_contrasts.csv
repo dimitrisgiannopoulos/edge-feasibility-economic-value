@@ -1,0 +1,7 @@
+support_pattern,contrast,paired_environments,mean_difference_points,ci_low,ci_high,positive_fraction,tie_fraction,negative_fraction
+clustered,intermediate_minus_aligned,20,2.3823359357296705,0.8048944728792912,3.8646179419454727,0.75,0.0,0.25
+clustered,intermediate_minus_disjoint,20,5.455428807509945,5.041180971147451,5.842525845730953,1.0,0.0,0.0
+clustered,aligned_minus_disjoint,20,3.0730928717802746,1.58326126264471,4.591055794383434,0.8,0.0,0.2
+dispersed,intermediate_minus_aligned,20,2.3711451529868,0.8495890080471005,3.9078183240108233,0.75,0.0,0.25
+dispersed,intermediate_minus_disjoint,20,5.443931921615999,5.030803728519421,5.8302073424422876,1.0,0.0,0.0
+dispersed,aligned_minus_disjoint,20,3.0727867686291988,1.5830639402525473,4.5661921692548875,0.8,0.0,0.2

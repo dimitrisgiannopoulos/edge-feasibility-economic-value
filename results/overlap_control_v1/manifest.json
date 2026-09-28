@@ -1,0 +1,23 @@
+{
+  "cases": 120,
+  "outcome_selection_runs": 480,
+  "replicas_per_cell": 20,
+  "tier_composition_per_group": {
+    "LOCAL": 4,
+    "REGIONAL": 1,
+    "CENTRAL": 1
+  },
+  "normalized_within_tier": [
+    "fixed_cost",
+    "compute_capacity",
+    "interface_capacity",
+    "contracted_quota",
+    "base_variable_cost"
+  ],
+  "exact_solver_status": {
+    "catalog_optimal": 102,
+    "informed_optimal": 120,
+    "maximum_catalog_gap": 0.019988903864223303,
+    "maximum_informed_gap": 0.0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "decision_pairs": 300,
+  "overlap_pairs": 120,
+  "correction_conditions": 720,
+  "maximum_decision_accounting_residual": 9.094947017729282e-13,
+  "maximum_correction_accounting_residual": 2.0463630789890885e-12,
+  "correction_source": "/home/dimit/uop/presentations/phd/30_three_body_optimizer/paper_A_model_simulator/noms2027/results/hardening_v1/outcomes.csv",
+  "worked_example_rule": "nearest positive middle-budget profit gain to the median across frozen Experiment 1"
+}

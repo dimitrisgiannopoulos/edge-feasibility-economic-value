@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "decision_pairs": 1500,
+  "overlap_pairs": 120,
+  "correction_conditions": 720,
+  "max_decision_accounting_residual": 9.094947017729282e-13,
+  "max_correction_accounting_residual": 2.0463630789890885e-12,
+  "correction_null_max": 0.0,
+  "edfs_replay": "PASS",
+  "controlled_overlap_cases": 120,
+  "controlled_overlap_max_greedy_gap_points": 1.1147037963561888,
+  "controlled_overlap_catalog_optimal_fraction": 0.85,
+  "controlled_overlap_max_catalog_gap": 0.0199889038642233,
+  "controlled_overlap_contrasts": 6,
+  "hardening_rows": 3240,
+  "prior_rows": 45,
+  "prior_sample_counts": [
+    12,
+    24,
+    48
+  ],
+  "prior_max_gap": 0.0209543419284358,
+  "prior_optimal_fraction": 0.7333333333333333,
+  "requirement_rows": 1800,
+  "scaling_rows": 18,
+  "strict_catalog_predicted_support_rate": 0.0,
+  "strict_catalog_no_deployment_rate": 1.0,
+  "requirement_prior_rows": 135,
+  "requirement_prior_profiles": [
+    "moderate",
+    "relaxed",
+    "strict"
+  ],
+  "requirement_prior_sample_counts": [
+    12,
+    24,
+    48
+  ],
+  "requirement_prior_max_gap": 0.0576919564020291,
+  "requirement_prior_strict_48_optimal_fraction": 1.0,
+  "final_outcomes": 3000,
+  "final_pairs": 1500,
+  "final_environments": 300,
+  "final_max_accounting_residual": 1.8189894035458565e-12
+}

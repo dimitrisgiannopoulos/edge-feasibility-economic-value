@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "areas": 24,
+  "sites": 48,
+  "tuples_replayed": 1152,
+  "support_entries": 258,
+  "reproduces_truthful_resolved_map": true,
+  "fast_public_internet_negative_control": "PASS",
+  "note": "The planner consumes the resolved binary map, not API serialization."
+}

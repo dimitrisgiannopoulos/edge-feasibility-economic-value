@@ -1,0 +1,18 @@
+{
+  "protocol": "requirement_prior_v1",
+  "purpose": "Compare current feasibility with a nested sampled-prior benchmark at 20, 50, and 100 ms on a matched representative subset of the requirement sweep.",
+  "seed_start": 70000,
+  "replicas": 5,
+  "topologies": ["regular", "multi_hotspot", "asymmetric"],
+  "demand_patterns": {
+    "regular": "uniform",
+    "multi_hotspot": "hotspots",
+    "asymmetric": "hotspots"
+  },
+  "profiles": ["strict", "moderate", "relaxed"],
+  "compute_ratio": 3.0,
+  "throughput_ratio": 3.0,
+  "budget_index": 2,
+  "sample_counts": [12, 24, 48],
+  "solver_time_limit_seconds": 600
+}

@@ -1,0 +1,34 @@
+{
+  "protocol": "pilot_v1",
+  "purpose": "Freeze parameter ranges before final evaluation; do not treat pilot environments as final evidence.",
+  "development": {
+    "catalog_calibration_seed_start": 10000,
+    "catalog_calibration_seeds": 30
+  },
+  "experiment_1": {
+    "seed_start": 20000,
+    "replicas": 20,
+    "topologies": ["regular", "multi_hotspot", "asymmetric"],
+    "demand_patterns": {
+      "regular": "uniform",
+      "multi_hotspot": "hotspots",
+      "asymmetric": "hotspots"
+    },
+    "budget_indices": [0, 1, 2, 3, 4],
+    "profile": "moderate",
+    "compute_ratio": 3.0,
+    "throughput_ratio": 3.0,
+    "prior_scenarios": 6
+  },
+  "experiment_2": {
+    "seed_start": 30000,
+    "replicas": 20,
+    "overlap_levels": ["aligned", "intermediate", "disjoint"],
+    "support_patterns": ["clustered", "dispersed"],
+    "matched_alternatives": 6,
+    "scarcity_alternatives": [2, 6, 12],
+    "scarcity_overlap": "intermediate",
+    "budget_index": 2,
+    "prior_scenarios": 6
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "paired_cases": 1500,
+  "environments": 300,
+  "maximum_accounting_residual": 9.094947017729282e-13,
+  "worked_example_rule": "positive middle-budget case nearest the final-sample median gain"
+}

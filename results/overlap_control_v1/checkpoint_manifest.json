@@ -1,0 +1,5 @@
+{
+  "protocol": "overlap_control_v1",
+  "implementation_sha256": "fcf07c848ce4d313b506ce3a6948555652259740e6a9dad15d96669b2e19e40b",
+  "replicas": 20
+}

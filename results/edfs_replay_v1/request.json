@@ -1,0 +1,247 @@
+{
+  "applicationProfileId": "18711a64-7470-5c8e-887f-ca5d1967a9b1",
+  "targetAreas": [
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.00045101460476,
+          "longitude": 23.00183836099203
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.0,
+          "longitude": 23.0327189408772
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.00325156915524,
+          "longitude": 23.048502492564
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.000954707720936,
+          "longitude": 23.07335022497133
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.0,
+          "longitude": 23.0949157991913
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.0,
+          "longitude": 23.12
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.02469966042902,
+          "longitude": 23.0
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.030879966945086,
+          "longitude": 23.02563674372057
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.02412866787936,
+          "longitude": 23.050183829139513
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.02618000329768,
+          "longitude": 23.071212977505304
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.02594061543485,
+          "longitude": 23.096927418453106
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.031192920238546,
+          "longitude": 23.12
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.05474718710264,
+          "longitude": 23.0
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.05804866499365,
+          "longitude": 23.026269821692825
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.050547392265344,
+          "longitude": 23.044857091253068
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.053120330842795,
+          "longitude": 23.071661958197673
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.05508346005979,
+          "longitude": 23.096286282077454
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.0490014079802,
+          "longitude": 23.11953870707207
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.07829870175695,
+          "longitude": 23.001248048718686
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.07850996162802,
+          "longitude": 23.02706839453592
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.077712230446686,
+          "longitude": 23.05039123332604
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.08,
+          "longitude": 23.069458692441756
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.07873333421545,
+          "longitude": 23.09365961285765
+        },
+        "radius": 5000
+      }
+    },
+    {
+      "area": {
+        "areaType": "CIRCLE",
+        "center": {
+          "latitude": 38.08,
+          "longitude": 23.119364045697843
+        },
+        "radius": 5000
+      }
+    }
+  ],
+  "maxResults": 100,
+  "includeNonViableCandidates": true
+}

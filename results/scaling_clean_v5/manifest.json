@@ -1,0 +1,54 @@
+{
+  "protocol": "robustness_scaling_v3",
+  "config_sha256": "34f3f04c322d3368e0001d443fde084f26d395d9b9d3eefdfec42038af4aed97",
+  "implementation_sha256": "3c55b59485e261c04f875a77dbf55632d13e9a44c1c51d8f0a654f5053feff45",
+  "config": {
+    "protocol": "robustness_scaling_v3",
+    "purpose": "Time-bounded scale validation of the frozen greedy information comparison.",
+    "topologies": [
+      "regular",
+      "multi_hotspot",
+      "asymmetric"
+    ],
+    "demand_patterns": {
+      "regular": "uniform",
+      "multi_hotspot": "hotspots",
+      "asymmetric": "hotspots"
+    },
+    "budget_index": 2,
+    "compute_ratio": 3.0,
+    "throughput_ratio": 3.0,
+    "application_requirements": {
+      "seed_start": 70000,
+      "replicas": 100,
+      "profiles": [
+        "strict",
+        "moderate",
+        "relaxed"
+      ]
+    },
+    "scaling": {
+      "seed_start": 80000,
+      "replicas": 1,
+      "profile": "moderate",
+      "budget_index": 0,
+      "planner_time_limit_seconds": 600,
+      "sizes": [
+        {
+          "areas": 24,
+          "sites": 48
+        },
+        {
+          "areas": 100,
+          "sites": 200
+        },
+        {
+          "areas": 250,
+          "sites": 500
+        }
+      ]
+    }
+  },
+  "tasks": 9,
+  "outcomes": 18
+}

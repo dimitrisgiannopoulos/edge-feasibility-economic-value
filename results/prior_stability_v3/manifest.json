@@ -1,0 +1,31 @@
+{
+  "environments": 15,
+  "environments_per_topology": 5,
+  "outcomes": 45,
+  "sample_counts": [
+    12,
+    24,
+    48
+  ],
+  "solver_time_limit_seconds": 600,
+  "optimal_outcomes": 33,
+  "maximum_mip_gap": 0.02095434192843589,
+  "completed_checkpoints": [
+    "prior__regular__r000.json",
+    "prior__multi_hotspot__r000.json",
+    "prior__asymmetric__r000.json",
+    "prior__regular__r001.json",
+    "prior__multi_hotspot__r001.json",
+    "prior__asymmetric__r001.json",
+    "prior__regular__r002.json",
+    "prior__multi_hotspot__r002.json",
+    "prior__asymmetric__r002.json",
+    "prior__regular__r003.json",
+    "prior__multi_hotspot__r003.json",
+    "prior__asymmetric__r003.json",
+    "prior__regular__r004.json",
+    "prior__multi_hotspot__r004.json",
+    "prior__asymmetric__r004.json"
+  ],
+  "purpose": "bounded stronger-comparator validation subset"
+}
