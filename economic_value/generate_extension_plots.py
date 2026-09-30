@@ -115,22 +115,22 @@ def main() -> None:
         labels = ["20 ms", "50 ms", "100 ms"]
         positions = np.arange(len(labels))
         width = .25
-        fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.8))
-        axes[0].bar(
-            positions - width, comparator.catalog_subset_profit, width,
-            label="Catalog + geography", color=COLORS["catalog"],
+        fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.1))
+        effects = comparator.current_minus_prior_points.to_numpy()
+        lower = comparator.current_minus_prior_ci_low.to_numpy()
+        upper = comparator.current_minus_prior_ci_high.to_numpy()
+        axes[0].axhline(0, color=COLORS["catalog"], linewidth=.8)
+        axes[0].errorbar(
+            positions, effects, yerr=np.vstack((effects - lower, upper - effects)),
+            fmt="o", markersize=7, capsize=4, linewidth=1.6,
+            color=COLORS["informed"],
         )
-        axes[0].bar(
-            positions, comparator.prior_subset_profit, width,
-            label=f"Prior ({int(comparator.prior_maps.iloc[0])} maps)", color=COLORS["accent"],
-        )
-        axes[0].bar(
-            positions + width, comparator.current_subset_profit, width,
-            label="Current feasibility", color=COLORS["informed"],
-        )
+        for x, value, high in zip(positions, effects, upper):
+            axes[0].annotate(f"{value:.2f}", (x, high), xytext=(0, 5),
+                             textcoords="offset points", ha="center", fontsize=8)
         axes[0].set_xticks(positions, labels)
-        axes[0].set(ylabel="Mean realized profit", xlabel="Delay requirement")
-        axes[0].legend(frameon=False, fontsize=7)
+        axes[0].set(ylabel="Gain vs 48-map prior\n(profit points)",
+                    xlabel="Delay requirement", ylim=(-.8, max(upper) + 2.0))
 
         axes[1].bar(
             positions - width,
@@ -159,8 +159,9 @@ def main() -> None:
             xlabel="Delay requirement",
             ylim=(0, 105),
         )
-        axes[1].legend(frameon=False, fontsize=6.8)
-        fig.tight_layout()
+        axes[1].legend(frameon=False, fontsize=6.8, loc="upper center",
+                       bbox_to_anchor=(.5, -.27), ncol=3)
+        fig.tight_layout(rect=(0, .13, 1, 1))
         _save(fig, args.output / "requirement_baseline_and_prior.png")
 
     prior = pd.read_csv(summary / "prior_stability_summary.csv")

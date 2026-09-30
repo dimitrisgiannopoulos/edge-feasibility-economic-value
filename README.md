@@ -1,6 +1,6 @@
 # Economic Value of Design-Time Edge Feasibility Exposure
 
-Version `v0.1.1` of the reproducibility artifact for *The Economic Value of
+Version `v0.1.2` of the reproducibility artifact for *The Economic Value of
 Design-Time Feasibility Exposure for Multi-Operator Edge Deployment*.
 
 The artifact contains the synthetic path and policy generator, catalog and
@@ -51,6 +51,13 @@ python -m economic_value.run_prior_stability \
   --config economic_value/config/requirement_prior_v1.json \
   --output results/requirement_prior_v1
 ```
+
+This validation uses 15 physical environments (five per topology, seeds
+starting at 70000) under three delay profiles, for 45 environment-profile
+cases. The separate 50-ms prior-stability subset uses 15 different physical
+environments (seeds starting at 46000). Thus its 48-map effect differs from
+the 50-ms requirement-validation effect despite matching sample count,
+profile, and budget.
 
 Additional runner commands and seed ranges are documented in
 `EXPERIMENT_PROTOCOL.md`. Supplied raw CSV files let readers inspect and
