@@ -49,27 +49,24 @@ def main() -> None:
 
     overlap = pd.read_csv(summary / "controlled_overlap_mechanism_summary.csv")
     order = ["aligned", "intermediate", "disjoint"]
+    data = overlap.groupby("overlap").mean(numeric_only=True).loc[order]
     fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.65))
-    for pattern, marker in (("clustered", "o"), ("dispersed", "s")):
-        data = overlap[overlap.support_pattern == pattern].set_index("overlap").loc[order]
-        axes[0].plot(order, data.catalog_profit, marker=marker, linestyle="--",
-                     color=COLORS["catalog"], alpha=.8, label=f"Catalog, {pattern}")
-        axes[0].plot(order, data.informed_profit, marker=marker,
-                     color=COLORS["informed"], label=f"Informed, {pattern}")
-        axes[1].plot(order, data.catalog_support_overestimate if "catalog_support_overestimate" in data else
-                     data.catalog_predicted_service - data.catalog_actual_service,
-                     marker=marker, label=pattern)
-        axes[2].plot(order, data.catalog_multi_operator_volume, marker=marker, linestyle="--",
-                     color=COLORS["catalog"], alpha=.8, label=f"Catalog, {pattern}")
-        axes[2].plot(order, data.informed_multi_operator_volume, marker=marker,
-                     color=COLORS["informed"], label=f"Informed, {pattern}")
+    axes[0].plot(order, data.catalog_profit, marker="o", linestyle="--",
+                 color=COLORS["catalog"], label="Catalog")
+    axes[0].plot(order, data.informed_profit, marker="s",
+                 color=COLORS["informed"], label="Current feasibility")
+    axes[1].plot(order, data.catalog_predicted_service - data.catalog_actual_service,
+                 marker="o", color=COLORS["accent"])
+    axes[2].plot(order, data.catalog_multi_operator_volume, marker="o", linestyle="--",
+                 color=COLORS["catalog"], label="Catalog")
+    axes[2].plot(order, data.informed_multi_operator_volume, marker="s",
+                 color=COLORS["informed"], label="Current feasibility")
     axes[0].set(ylabel="Realized profit", xlabel="Cross-operator support")
     axes[1].set(ylabel="Catalog service error", xlabel="Cross-operator support")
     axes[2].set(ylabel="Multi-MNO service", xlabel="Cross-operator support")
     for axis in axes:
         axis.tick_params(axis="x", rotation=20)
     axes[0].legend(frameon=False, fontsize=6.8)
-    axes[1].legend(frameon=False)
     axes[2].legend(frameon=False, fontsize=6.8)
     fig.tight_layout()
     _save(fig, args.output / "overlap_mechanism.png")
@@ -216,7 +213,8 @@ def main() -> None:
         axes[0].scatter(sites.loc[mask, "x"], sites.loc[mask, "y"], marker=marker,
                         s=95, c=color, edgecolor="white", linewidth=.7, label=label)
     axes[0].set(xlabel="Synthetic east-west coordinate", ylabel="Synthetic north-south coordinate")
-    axes[0].legend(frameon=False, fontsize=7, ncol=2)
+    axes[0].legend(loc="lower left", bbox_to_anchor=(0, 1.01),
+                   frameon=False, fontsize=7, ncol=2)
     components = [summary_json["revenue_difference"], -summary_json["fixed_cost_difference"],
                   -summary_json["variable_cost_difference"]]
     axes[1].bar(["Revenue", "Fixed cost", "Variable cost"], components,
